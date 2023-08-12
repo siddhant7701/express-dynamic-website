@@ -1,0 +1,254 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+    font-weight: normal;
+}
+
+nav a:hover {
+    font-weight: bold;
+    transform: translateY(-5px);
+    color: #ff8c00;
+}
+
+.main-logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.main-tile img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #333;
+    color: #fff;
+    animation: slideInUp 1s ease-in-out;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    margin-bottom: 1rem;
+}
+
+.box {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    background-color: #ff8c00;
+}
+
+.box a {
+    text-decoration: none;
+    color: #333;
+}
+
+.between-section {
+    background-color: #f8f8f8;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.tiles {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.tile {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    width: calc(50% - 20px);
+    aspect-ratio: 1/1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    background-color: #ff8c00;
+}
+
+.tile a {
+    text-decoration: none;
+    color: #333;
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+}
+
+#backToTopBtn:hover {
+    opacity: 0.7;
+}
+
+.google-ads {
+    text-align: center;
+    margin-top: auto;
+    padding: 2rem 0;
+    background-color: #f8f8f8;
+}
+
+.google-ad {
+    display: inline-block;
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+    .tile,
+    .box {
+        width: calc(100% - 20px);
+    }
+    .contact-form {
+        padding: 1rem;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ff8c00;
+}
